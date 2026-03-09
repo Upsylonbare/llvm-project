@@ -842,6 +842,9 @@ option(LLVM_INCLUDE_TOOLS "Generate build targets for the LLVM tools." ON)
 option(LLVM_BUILD_TOOLS
   "Build the LLVM tools. If OFF, just generate build targets." ON)
 
+option(LLVM_ENABLE_VERSION_SYMLINK
+  "Set the VERSION property on tool targets, causing linkers to create versioned symlinks (e.g. tool -> tool-${LLVM_VERSION_MAJOR})." OFF)
+
 option(LLVM_INCLUDE_UTILS "Generate build targets for the LLVM utils." ON)
 option(LLVM_BUILD_UTILS
   "Build LLVM utility binaries. If OFF, just generate build targets." ON)
